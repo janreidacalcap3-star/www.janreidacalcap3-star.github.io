@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janrei Dacalcap | Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: #f5f8ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #20334b;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span, .highlight {
+      color: #168cff;
+    }
+
+    nav a {
+      color: #e5edfa;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: #168cff;
+    }
+
+    .hero {
+      min-height: 570px;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 45px;
+      background: radial-gradient(
+        circle at 80% 50%, #102f57, #07111f 60%
+      );
+    }
+
+    .intro {
+      max-width: 600px;
+    }
+
+    .eyebrow {
+      color: #168cff;
+      letter-spacing: 4px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 68px);
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 23px;
+      margin-bottom: 24px;
+    }
+
+    .description {
+      color: #c2d2e8;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 22px;
+      border: 1px solid #168cff;
+      border-radius: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .primary {
+      background: #168cff;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    .profile {
+      width: 290px;
+      height: 290px;
+      min-width: 200px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1765c2, #168cff);
+      border: 5px solid #15375f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 70px;
+      font-weight: bold;
+      box-shadow: 0 0 45px #168cff35;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 45px 8%;
+      gap: 25px;
+      text-align: center;
+      border-top: 1px solid #20334b;
+    }
+
+    .feature {
+      padding: 15px;
+    }
+
+    .feature .symbol {
+      font-size: 32px;
+      color: #168cff;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #c2d2e8;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: #9eb0c8;
+      border-top: 1px solid #20334b;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 5px;
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 55px 7%;
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .profile {
+        width: 190px;
+        height: 190px;
+        font-size: 50px;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .features {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo"><span>JD</span> Janrei Dacalcap</div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="intro">
+        <p class="eyebrow">HELLO, I'M</p>
+
+        <h1>Janrei <span class="highlight">Dacalcap</span></h1>
+
+        <p class="subtitle">
+          IT Student | Aspiring Software Developer
+        </p>
+
+        <p class="description">
+          I'm a passionate IT student who loves learning,
+          building solutions, and exploring technology.
+          I aim to improve my programming skills and create
+          useful applications in the future.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="#projects">
+            View My Projects →
+          </a>
+
+          <a class="btn" href="#about">
+            About Me
+          </a>
+        </div>
+      </div>
+
+      <div class="profile">JD</div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="feature">
+        <div class="symbol">&lt;/&gt;</div>
+        <h3>Build</h3>
+        <p>Developing practical and creative solutions.</p>
+      </div>
+
+      <div class="feature" id="skills">
+        <div class="symbol">✦</div>
+        <h3>Learn</h3>
+        <p>Exploring programming and new technologies.</p>
+      </div>
+
+      <div class="feature" id="projects">
+        <div class="symbol">◇</div>
+        <h3>Grow</h3>
+        <p>Improving my skills through projects and practice.</p>
+      </div>
+
+      <div class="feature" id="contact">
+        <div class="symbol">◎</div>
+        <h3>Achieve</h3>
+        <p>Working toward my goals as a future developer.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Janrei Dacalcap | Personal Portfolio
+  </footer>
+
+</body>
+</html>
